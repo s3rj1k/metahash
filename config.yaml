@@ -1,0 +1,9 @@
+path: '/var/www'
+excludes:
+  - '.+/bitrix/backup'
+  - '.+/bitrix/cache'
+  - '.+/bitrix/local_cache'
+  - '.+/bitrix/managed_cache'
+  - '.+/bitrix/stack_cache'
+  - '.+/bitrix/tmp'
+  - '.+/upload/tmp'
