@@ -11,7 +11,7 @@ build:
 	$(ENV_BIN) CGO_ENABLED=1 GOOS=linux $(GO_BIN) build -ldflags '-s -w -extldflags "-static"' -o $(OUT_BIN) -v
 
 update:
-	$(ENV_BIN) GOPROXY=direct GOPRIVATE=github.com/imena/* $(GO_BIN) get -u
+	$(ENV_BIN) GOPROXY=direct GOPRIVATE=github.com/s3rj1k/* $(GO_BIN) get -u
 	$(GO_BIN) get -u github.com/golangci/golangci-lint/cmd/golangci-lint
 	$(GO_BIN) get -u github.com/mgechev/revive
 	$(GO_BIN) mod tidy
